@@ -35,5 +35,16 @@
             );";
 
     if (!mysqli_query($conn, $sql_table_create))
-        die("Error creating tbl_posts")
+		die("Error creating tbl_posts")
+
+	$sql_table_create = 
+		"CREATE TABLE IF NOT EXISTS tbl_comments
+		(id int NOT NULL AUTO_INCREMENT,
+		userId int NOT NULL AUTO_INCREMENT,
+		postId int NOT NULL,
+		comment TEXT NOT NULL,
+		PRIMARY KEY (id)
+		);";
+	if (!mysqli_query($conn, $sql_table_create))
+		die ("Error creating tbl_comments ".mysqli_error($conn));
  ?>
