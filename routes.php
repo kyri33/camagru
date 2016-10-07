@@ -2,18 +2,17 @@
 
 	function call($controller, $action)
 	{
-		require_once($root.'/controllers/'.$controller'._controller.php');
-
+		require_once('controllers/'.$controller.'_controller.php');
 		switch($controller) {
 		case 'pages':
 			$controller = new PagesController();
 			break;
 		}
 
-		$controller->{$action}();
+		$controller->{ $action }();
 	}
 
-	$controllers = array('pages' => ['home', 'error']);
+	$controllers = array('pages' => ['home', 'error', 'about']);
 
 	if (array_key_exists($controller, $controllers))
 	{

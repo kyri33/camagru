@@ -1,7 +1,7 @@
 <?php
 	$root = $_SERVER['DOCUMENT_ROOT'];
 	require_once('config/database.php');
-	$page_title = "Home";
+	$page_title = "Title";
 
 	if (isset($_GET['controller']) && isset($_GET['action']))
 	{

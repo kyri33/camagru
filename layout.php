@@ -13,11 +13,15 @@
 <body>
 
 <div id="top-nav">
+	<div class="row">
 	<ul id="top-menu">
-		<li class="top-menu-item">Home</li>
-		<li class="top-menu-item">About</li>
+		<li class="top-menu-item"><a href="index.php?controller=pages&action=home">Home</a></li>
+		<li class="top-menu-item"><a href="index.php?controller=pages&action=about">About</a></li>
 	</ul>
 </div>
+</div>
+
+<?php require_once('routes.php'); ?>
 
 </body>
 </html>

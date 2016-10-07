@@ -1,25 +1,60 @@
 body {
-	background-image: url("http://crazyprofile.com/layouts/pre_images/animated_60.gif");
-	background-color: #cccccc;
+	background-color: #2C3E50;
+}
+
+.row
+{
+    width:100%;
+	height: 100%;
+    margin: 0 auto;
 }
 
 #top-nav {
 	position: fixed;
 	top: 0;
-	left: 0;
-	background: #fff;
-	width: 100%;
-	height: 10%;
-	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); 
+	right: 0;
+	background: #000;
+	/*width: 100%;
+	height: 10%;*/
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 #top-menu {
 	float: right;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#center-box {
+
+	width: 50%;
+	height: 50%;
+	position: relative;
+  	top: 50%;
+	margin: auto;
+  	transform: translateY(-50%);
+	opacity: 0.5;
+	background-color: #2C3E50;
+	box-shadow: 3px 3px 8px #000;
 }
 
 #top-menu li {
-	display: inline-block;
-	padding: 5%;
-	text-color: white;
+	float: left;
 }
 
+#top-menu li a {
+	text-align: center;
+	display: block;
+    color: white;
+	font-size: 15pt;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#top-menu li a:hover {
+    background-color: #111;
+}
