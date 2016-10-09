@@ -28,14 +28,23 @@ body {
     background-color: #333;
 }
 
+#top-heading {
+
+	width: 100%;
+	position: absolute;
+	top: 10%;
+	text-align: center;
+
+}
+
 #center-box {
 
 	width: 50%;
 	height: 50%;
 	position: relative;
-  	top: 50%;
+  	top: 40%;
 	margin: auto;
-  	transform: translateY(-50%);
+  	transform: translateY(-40%);
 	opacity: 0.5;
 	background-color: #2C3E50;
 	box-shadow: 3px 3px 8px #000;

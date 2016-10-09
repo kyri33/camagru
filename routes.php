@@ -7,12 +7,16 @@
 		case 'pages':
 			$controller = new PagesController();
 			break;
+		case 'signup':
+			$controller = new SignUpController();
+			break;
 		}
 
 		$controller->{ $action }();
 	}
 
-	$controllers = array('pages' => ['home', 'error', 'about']);
+	$controllers = array('pages' => ['home', 'error', 'about'],
+						 'signup' =>['show']);
 
 	if (array_key_exists($controller, $controllers))
 	{
