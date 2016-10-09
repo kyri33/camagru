@@ -37,17 +37,40 @@ body {
 
 }
 
+input {
+	width : 100%;
+	height: 100%;
+}
+
 #center-box {
 
 	width: 50%;
 	height: 50%;
 	position: relative;
   	top: 40%;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
   	transform: translateY(-40%);
 	opacity: 0.5;
 	background-color: #2C3E50;
 	box-shadow: 3px 3px 8px #000;
+}
+
+#center-box .validation-form {
+
+}
+
+#center-box .validation-form ul {
+	margin-right: 3%;
+	margin-bottom: 3%;
+	margin-top: 3%;
+}
+
+#center-box .validation-form ul li {
+	display: block;
+	margin-top: 6%;
+	margin-bottom: 6%;
+	height: 5%;
 }
 
 #top-menu li {

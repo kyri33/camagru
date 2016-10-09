@@ -16,12 +16,14 @@
 
      <p> <?php echo $errorMessage ?> </p>
 
-<form action="index.php?controller=signup&action=show" method="post">
-    <input type="text" placeholder="username" name="username" value='<?php echo $username?>'/>
-    <input type="password" name="password" placeholder="password" />
-    <input type="text" name="email" placeholder="email address" value='<?php echo $email ?>'/>
-    <input type="password" name="repeat" placeholder="repeat password" />
-    <input type="submit" value="Sign Up"/>
+<form class="validation-form" action="index.php?controller=signup&action=show" method="post">
+    <ul>
+    <li><input type="text" placeholder="username" name="username" value='<?php echo $username?>'/></li>
+    <li><input type="password" name="password" placeholder="password" /></li>
+    <li><input type="text" name="email" placeholder="email address" value='<?php echo $email ?>'/></li>
+    <li><input type="password" name="repeat" placeholder="repeat password" /></li>
+    <li><input type="submit" value="Sign Up"/></li>
+</ul>
 </form>
 
 </div>
