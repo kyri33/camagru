@@ -15,7 +15,7 @@
 
                 if (strlen($username) < 3)
                     $error = "length";
-                else if (preg_match('/[A-Za-z0-9]/', $password))
+                else if (preg_match('/[A-Z][a-z][0-9]/', $password))
                     $error = "syntax";
                 else if (strlen($password) < 8)
                     $error = "passwordlength";
@@ -30,7 +30,12 @@
             require_once('views/signup.php');
         }
 
-        private function _check($username, $password, $email)
+        private function _check($username, $password, $email) {
+            if (SignUp::add($username, $email, $password) == 1)
+                return True;
+            else
+                return False;
+        }
 
     }
 

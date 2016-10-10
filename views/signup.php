@@ -12,7 +12,7 @@
             $errorMessage = "Password must contain at least one lower case letter, one upper case later and one number";
         else if ($error == "passwordlength")
             $errorMessage = "Password must be at least 8 characters";
-        else if ($error == "email");
+        else if ($error == "email")
             $errorMessage = "Please enter a valid email address.";
         else if ($error == "repeat")
             $errorMessage = "Passwords do not match";

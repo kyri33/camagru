@@ -8,6 +8,7 @@
 			$controller = new PagesController();
 			break;
 		case 'signup':
+			require_once('models/signup_model.php');
 			$controller = new SignUpController();
 			break;
 		}
