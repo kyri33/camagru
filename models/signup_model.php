@@ -2,7 +2,7 @@
 
     class SignUp() {
 
-        public static function signUp($username, $email, $password, $repeat) {
+        public static function signUp($username, $email, $password) {
 
             $db = Db::getInstance();
 
