@@ -11,13 +11,18 @@
 			require_once('models/signup_model.php');
 			$controller = new SignUpController();
 			break;
+		case 'validation':
+			require_once('modes/validation_model.php');
+			$controller = new ValidationController();
+			break;
 		}
 
 		$controller->{ $action }();
 	}
 
 	$controllers = array('pages' => ['home', 'error', 'about'],
-						 'signup' =>['show']);
+						'signup' => ['show'],
+						'validation' => ['login']);
 
 	if (array_key_exists($controller, $controllers))
 	{

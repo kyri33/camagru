@@ -3,10 +3,9 @@
     class Validation()
     {
 
-        public static function check($login, $pass)
+        public static function check($login, $hash)
         {
 
-            $hash = hash("whirlpool", "kyriakos".$pass);
             $db = Db::getInstance();
             $query = $db->query('SELECT id FROM tbl_users WHERE
                 (username = :login OR email = :login) AND password = :hash;');
