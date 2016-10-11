@@ -4,7 +4,7 @@
 
 	<?php
 		$errorMessage = "";
-		if ($error = "incorrect")
+		if ($error == "incorrect")
 			$errorMessage = "Incorrect login/password";
 	?>
 

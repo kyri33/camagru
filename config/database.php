@@ -1,10 +1,10 @@
 <?php
 
-    $DB_HOST = 'localhost';
+    $DB_HOST = '127.0.0.1';
     $DB_NAME = 'db_camagru';
     $DB_DSN = 'mysql:host='.$DB_HOST.';dbname='.$DB_NAME;
     $DB_USER = 'root';
-    $DB_PASSWORD = '';
+    $DB_PASSWORD = '15891589';
 
     class Db {
 
@@ -15,11 +15,11 @@
     private function __clone() {}
 
     public static function getInstance() {
-        $DB_HOST = 'localhost';
+        $DB_HOST = '127.0.0.1';
         $DB_NAME = 'db_camagru';
         $DB_DSN = 'mysql:host='.$DB_HOST.';dbname='.$DB_NAME;
         $DB_USER = 'root';
-        $DB_PASSWORD = '';
+        $DB_PASSWORD = '15891589';
         if (!isset(self::$instance)) {
             $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
             self::$instance = new PDO($DB_DSN, $DB_USER, $DB_PASSWORD,

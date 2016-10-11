@@ -12,8 +12,11 @@
 			$controller = new SignUpController();
 			break;
 		case 'validation':
-			require_once('modes/validation_model.php');
+			require_once('models/validation_model.php');
 			$controller = new ValidationController();
+			break;
+		case 'upload':
+			$controller = new UploadController();
 			break;
 		}
 
@@ -22,7 +25,8 @@
 
 	$controllers = array('pages' => ['home', 'error', 'about'],
 						'signup' => ['show'],
-						'validation' => ['login']);
+						'validation' => ['login'],
+						'upload' => ['show']);
 
 	if (array_key_exists($controller, $controllers))
 	{
