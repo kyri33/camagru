@@ -28,7 +28,7 @@
     <li><input type="password" name="password" placeholder="password" /></li>
     <li><input type="text" name="email" placeholder="email address" value='<?php echo $email ?>'/></li>
     <li><input type="password" name="repeat" placeholder="repeat password" /></li>
-    <li><input type="submit" value="Sign Up"/></li>
+    <li><input id="submit" type="submit" value="Sign Up"/></li>
 </ul>
 </form>
 
