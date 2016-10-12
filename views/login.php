@@ -14,7 +14,7 @@
 	<ul>
 	<li><input type="text" placeholder="username/emaill" name="login" value="" /></li>
 	<li><input type="password" name="password" placeholder="password" /></li>
-	<li><input type="submit" value="Log In" name="submit" /></li>
+	<li><input id="submit" type="submit" value="Log In" name="submit" /></li>
 	</ul>
 </form>
 </div>

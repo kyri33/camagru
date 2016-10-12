@@ -4,7 +4,7 @@
     $DB_NAME = 'db_camagru';
     $DB_DSN = 'mysql:host='.$DB_HOST.';dbname='.$DB_NAME;
     $DB_USER = 'root';
-    $DB_PASSWORD = '15891589';
+    $DB_PASSWORD = 'An8Lf7nA';
 
     class Db {
 
@@ -19,7 +19,7 @@
         $DB_NAME = 'db_camagru';
         $DB_DSN = 'mysql:host='.$DB_HOST.';dbname='.$DB_NAME;
         $DB_USER = 'root';
-        $DB_PASSWORD = '15891589';
+        $DB_PASSWORD = 'An8Lf7nA';
         if (!isset(self::$instance)) {
             $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
             self::$instance = new PDO($DB_DSN, $DB_USER, $DB_PASSWORD,
