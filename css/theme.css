@@ -110,3 +110,34 @@ p {
 	text-align: center;
 	color: #c11f1f;
 }
+
+#camera {
+	display: block;
+	padding-top: 5%;
+	padding-left: 5%;
+}
+
+#capture {
+	outline: none;
+	margin-left: 5%;
+   background: #496990;
+   padding: 0.5% 15%;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #ffffff;
+   font-size: 120%;
+   font-family: sans-serif;
+   text-decoration: none;
+   vertical-align: middle;
+	border: none;
+   }
+#capture:hover {
+   color: #496990;
+   background-color: #ffffff;
+   cursor: pointer;
+   }
+
+#capture:active {
+	color: #ffffff;
+	background-color: #33842a;
+	opacity: 0.5;
+}
