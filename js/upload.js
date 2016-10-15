@@ -1,14 +1,16 @@
 window.addEventListener("load", function() {
 
 	var camera = document.getElementById("camera");
-	var play = document.getElementById("play");
-	var pause = document.getElementById("stop");
+	var capture = document.getElementById("capture");
+	var canvas = document.getElementById(("canvas"));
+	var context = canvas.getContext("2d");
 	var constraints = {audio:false, video: true};
+
 	function success(stream) {
 		camera.src = window.URL.createObjectURL(stream);
 		camera.play();
 	}
-
+//console.log("Check");
 	function failure(error) {
 		alert(JSON.stringify(error));
 	}
@@ -18,8 +20,15 @@ window.addEventListener("load", function() {
 	else
 		alert("Your browser does not support webcam");
 
-	play.addEventListener("click", function() {
-		camera.play();
-	}, false);
+	capture.addEventListener("click", function() {
+		context.drawImage(camera, 0, 0, 640, 480);
+	});
+
+	document.getElementById('form').addEventListener("submit",function(){
+		console.log("Come on");
+      var image = canvas.toDataURL(); // data:image/png....
+      document.getElementById('fileToUpload').value = image;
+      console.log("added");
+   },false);
 
 }, false);

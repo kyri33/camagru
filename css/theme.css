@@ -66,6 +66,12 @@ input {
 
 }
 
+#camera {
+	display: block;
+	padding-top: 5%;
+	padding-left: 5%;
+}
+
 #top-menu li {
 	float: left;
 }
@@ -111,10 +117,20 @@ p {
 	color: #c11f1f;
 }
 
-#camera {
-	display: block;
-	padding-top: 5%;
-	padding-left: 5%;
+select {
+	width: 40%;
+	height: 10%;
+	display: table-row;
+}
+
+option {
+	display: table-cell;
+	height: 100%;
+	width: 33%;
+}
+
+#selectedImage {
+	display: none;
 }
 
 #capture {

@@ -47,5 +47,10 @@
 		);";
 	if (!mysqli_query($conn, $sql_table_create))
 		die ("Error creating tbl_comments ".mysqli_error($conn));
+
+    if (!file_exists("../images/")) {
+        mkdir("../images");
+    }
+
     echo "Successfully created";
  ?>
