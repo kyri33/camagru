@@ -3,7 +3,7 @@
 
  ?>
 
-<h1 id="top-heading">Home </h1>
+<h1 id="top-heading">Snap'd </h1>
 
  <div id="center-box">
 

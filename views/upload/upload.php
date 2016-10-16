@@ -1,9 +1,13 @@
 <script type="application/javascript" src="js/upload.js"></script>
-	<video id="camera" width="640" height="480"></video>
-	<canvas id="canvas" width="640" height="480"></canvas>
+	<div class="side">
+		<video id="camera" width="640" height="480"></video>
+	</div>
+	<div class="side">
+		<canvas id="canvas" width="640" height="480"></canvas>
+	</div>
 <br/>
 <button id="capture">Capture</button>
-
+<br>
 <select size="2" multiple>
 	<option id ="o1">1</option>
 	<option id="o2">2</option>

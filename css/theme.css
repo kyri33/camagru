@@ -1,5 +1,9 @@
 body {
-	background-color: #435871;
+	background-color: #435a7f;
+}
+
+h1 {
+	color: white;
 }
 
 .row
@@ -135,9 +139,9 @@ option {
 
 #capture {
 	outline: none;
-	margin-left: 5%;
+	margin-left: 2%;
    background: #496990;
-   padding: 0.5% 15%;
+   padding: 0.5% 17.5%;
    text-shadow: rgba(0,0,0,.4) 0 1px 0;
    color: #ffffff;
    font-size: 120%;
@@ -156,4 +160,12 @@ option {
 	color: #ffffff;
 	background-color: #33842a;
 	opacity: 0.5;
+}
+
+.side {
+	display: inline-block;
+}
+
+#canvas {
+	padding-left: 5%;
 }
