@@ -13,6 +13,11 @@
 			if (isset($_POST)) {
 				$image = $_POST['fileToUpload'];
 				$userId = $_SESSION["logged_on_user"];
+
+				if (Upload::add($image, $userId) == 1)
+					echo "Success";
+				else
+					echo "Failure";
 			}
 		}
 	}

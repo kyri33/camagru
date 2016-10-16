@@ -16,6 +16,7 @@
 			$controller = new ValidationController();
 			break;
 		case 'upload':
+			require_once('models/upload_model.php');
 			$controller = new UploadController();
 			break;
 		}
@@ -33,9 +34,9 @@
 		if (in_array($action, $controllers[$controller]))
 			call($controller, $action);
 		else
-			call('pages', 'error');
+			;
 	}
 	else
-		call('pages', 'error');
+		;
 
 ?>

@@ -43,15 +43,11 @@ window.addEventListener("load", function() {
 	submit.addEventListener("click", function() {
 		if (inputFile.value != "" || captured == true) {
 			var image = canvas.toDataURL();
-			console.log("yes");
 			var http = new XMLHttpRequest();
 			http.onreadystatechange = function () {
 				if (this.readyState == 4 && this.status == 200) {
-					console.log("awe");
 					console.log(this.responseText);
-				} else {
-					console.log("error");
-					console.log(this.resonseText);
+					alert("Image successfully uploaded");
 				}
 			};
 			var data = new FormData();
