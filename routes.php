@@ -26,7 +26,7 @@
 	$controllers = array('pages' => ['home', 'error', 'about'],
 						'signup' => ['show'],
 						'validation' => ['login'],
-						'upload' => ['show']);
+						'upload' => ['show', 'upload']);
 
 	if (array_key_exists($controller, $controllers))
 	{
