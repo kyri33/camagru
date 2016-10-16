@@ -7,7 +7,6 @@ window.addEventListener("load", function() {
 	var constraints = {audio:false, video: true};
 	var submit = document.getElementById("submit");
 	var inputFile = document.getElementById("fileToUpload");
-
 	var captured = false;
 
 	function success(stream) {
@@ -26,11 +25,40 @@ window.addEventListener("load", function() {
 
 	capture.addEventListener("click", function() {
 		captured = true;
-		if (inputFile.value === "")
-			console.log("nada");
 		context.drawImage(camera, 0, 0, 640, 480);
 	});
 
-      //var image = canvas.toDataURL(); // data:image/png....
+	inputFile.addEventListener('change', function() {
+		var reader = new FileReader();
+		reader.onload = function(event) {
+			var img = new Image();
+			img.onload = function () {
+				context.drawImage(img, 0, 0);
+			}
+			img.src = event.target.result;
+		}
+		reader.readAsDataURL(inputFile.files[0]);
+	});
+
+	submit.addEventListener("click", function() {
+		if (inputFile.value != "" || captured == true) {
+			var image = canvas.toDataURL();
+			console.log("yes");
+			var http = new XMLHttpRequest();
+			http.onreadystatechange = function () {
+				if (this.readyState == 4 && this.status == 200) {
+					console.log("awe");
+					console.log(this.responseText);
+				} else {
+					console.log("error");
+					console.log(this.resonseText);
+				}
+			};
+			var data = new FormData();
+			data.append('fileToUpload', image);
+			http.open("POST", "index.php?controller=upload&action=upload", true);
+			http.send(data);
+		}
+	});
 
 }, false);
