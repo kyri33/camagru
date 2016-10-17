@@ -19,6 +19,10 @@
 			require_once('models/upload_model.php');
 			$controller = new UploadController();
 			break;
+		case 'gallery':
+			require_once('models/gallery_model.php');
+			$controller = new GalleryController();
+			break;
 		}
 
 		$controller->{ $action }();
@@ -27,7 +31,8 @@
 	$controllers = array('pages' => ['home', 'error', 'about'],
 						'signup' => ['show'],
 						'validation' => ['login', 'logout'],
-						'upload' => ['show', 'upload']);
+						'upload' => ['show', 'upload'],
+						'gallery' => ['show', 'like']);
 
 	if (array_key_exists($controller, $controllers))
 	{

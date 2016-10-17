@@ -48,6 +48,16 @@
 	if (!mysqli_query($conn, $sql_table_create))
 		die ("Error creating tbl_comments ".mysqli_error($conn));
 
+    $sql_table_create =
+        "CREATE TABLE IF NOT EXISTS tbl_likes
+        (id int NOT NULL AUTO_INCREMENT,
+        userId int NOT NULL,
+        postId int NOT NULL,
+        PRIMARY KEY (id)
+        );";
+    if (!mysqli_query($conn, $sql_table_create))
+        die ("Error creating tbl_likes ".mysqli_error($conn));
+
     if (!file_exists("../images/")) {
         mkdir("../images");
     }
