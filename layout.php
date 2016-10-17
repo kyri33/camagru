@@ -26,6 +26,7 @@
 			<?php } else {
 				?>
 				<li class="top-menu-item"><a href="index.php?controller=upload&action=show">Upload</a></li>
+				<li class="top-menu-item"><a href="index.php?controller=validation&action=logout">Logout</a></li>
 			<?php }
 		 ?>
 	</ul>

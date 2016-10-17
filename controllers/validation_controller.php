@@ -1,9 +1,10 @@
 <?php
 
     class ValidationController {
-		
+
 		public function login()
 		{
+            $error = "";
 			if (!empty($_POST)) {
 				$login = $_POST['login'];
 				$hash = hash("whirlpool", "kyriakos".$_POST['password']);
@@ -16,6 +17,11 @@
 			}
 			require_once('views/login.php');
 		}
+
+        public function logout() {
+            $_SESSION['logged_on_user'] = "";
+            header('Location: index.php');
+        }
     }
 
  ?>
