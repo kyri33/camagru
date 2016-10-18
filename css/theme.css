@@ -1,5 +1,9 @@
 body {
-	background-color: #435871;
+	background-color: #435a7f;
+}
+
+h1 {
+	color: white;
 }
 
 .row
@@ -22,15 +26,18 @@ body {
 #top-heading {
 
 	width: 100%;
-	position: absolute;
 	top: 10%;
 	text-align: center;
-
+	font-family: Lucida Console;
+	position: relative;
+	font-size: 4em;
 }
 
 input {
 	width : 100%;
 	height: 100%;
+	padding: 2%;
+
 }
 
 #center-box {
@@ -51,15 +58,22 @@ input {
 	margin-right: 3%;
 	margin-bottom: 3%;
 	margin-top: 3%;
+	color: white;
 }
 
 #center-box .validation-form ul li {
-
     display: block;
     position: relative;
     margin-top: 5%;
-    height: 10%;
+    height: 10%
+	color:red;
 
+}
+
+#camera {
+	display: block;
+	padding-top: 5%;
+	padding-left: 5%;
 }
 
 #top-menu li {
@@ -78,4 +92,80 @@ input {
 
 #top-menu li a:hover {
     background-color: #111;
+}
+
+input#submit{
+	cursor:pointer;
+	padding:5px 25px;
+	background:#35b128;
+	border:1px solid #33842a;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+	-moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+	box-shadow: 0 0 4px rgba(0,0,0, .75);
+	color:#111;
+	font-size:1.1em;
+	font-family: Helvetica;
+}
+input#submit:hover, input#submit:focus {
+	background-color :#399630; 
+	-webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+	-moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
+	box-shadow: 0 0 1px rgba(0,0,0, .75);
+}
+
+p {
+	text-align: center;
+	color: #c11f1f;
+}
+
+select {
+	width: 40%;
+	height: 10%;
+	display: table-row;
+}
+
+option {
+	display: table-cell;
+	height: 100%;
+	width: 33%;
+}
+
+#selectedImage {
+	display: none;
+}
+
+#capture {
+	outline: none;
+	margin-left: 2%;
+   background: #496990;
+   padding: 0.5% 17.5%;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #ffffff;
+   font-size: 120%;
+   font-family: sans-serif;
+   text-decoration: none;
+   vertical-align: middle;
+	border: none;
+   }
+#capture:hover {
+   color: #496990;
+   background-color: #ffffff;
+   cursor: pointer;
+   }
+
+#capture:active {
+	color: #ffffff;
+	background-color: #33842a;
+	opacity: 0.5;
+}
+
+.side {
+	display: inline-block;
+}
+
+#canvas {
+	padding-left: 5%;
 }

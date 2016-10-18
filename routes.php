@@ -11,22 +11,37 @@
 			require_once('models/signup_model.php');
 			$controller = new SignUpController();
 			break;
+		case 'validation':
+			require_once('models/validation_model.php');
+			$controller = new ValidationController();
+			break;
+		case 'upload':
+			require_once('models/upload_model.php');
+			$controller = new UploadController();
+			break;
+		case 'gallery':
+			require_once('models/gallery_model.php');
+			$controller = new GalleryController();
+			break;
 		}
 
 		$controller->{ $action }();
 	}
 
 	$controllers = array('pages' => ['home', 'error', 'about'],
-						 'signup' =>['show']);
+						'signup' => ['show'],
+						'validation' => ['login', 'logout'],
+						'upload' => ['show', 'upload'],
+						'gallery' => ['show', 'like']);
 
 	if (array_key_exists($controller, $controllers))
 	{
 		if (in_array($action, $controllers[$controller]))
 			call($controller, $action);
 		else
-			call('pages', 'error');
+			;
 	}
 	else
-		call('pages', 'error');
+		;
 
 ?>

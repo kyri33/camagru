@@ -23,6 +23,10 @@
 				?>
 				<li class="top-menu-item"><a href="index.php?controller=signup&action=show">Sign Up</a></li>
 				<li class="top-menu-item"><a href="index.php?controller=validation&action=login">Login</a></li>
+			<?php } else {
+				?>
+				<li class="top-menu-item"><a href="index.php?controller=upload&action=show">Upload</a></li>
+				<li class="top-menu-item"><a href="index.php?controller=validation&action=logout">Logout</a></li>
 			<?php }
 		 ?>
 	</ul>
