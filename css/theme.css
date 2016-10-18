@@ -33,11 +33,26 @@ h1 {
 	font-size: 4em;
 }
 
+/****** YOU CANT JUST MAKE INPUT 100% CAKE. NOW EVERY INPUT WE USE
+			MUST BE THIS SIZE????. FIX THIS SHIT.
+			vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 input {
 	width : 100%;
 	height: 100%;
 	padding: 2%;
 
+}      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+input[type="checkbox"] {
+	display: none;
+}
+
+input[type="checkbox"] + label {
+	color: white;
+}
+
+input[type="checkbox"]:checked + label {
+	color: red;
 }
 
 #center-box {
