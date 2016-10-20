@@ -17,6 +17,7 @@
 	<ul id="top-menu">
 		<li class="top-menu-item"><a href="index.php?controller=pages&action=home">Home</a></li>
 		<li class="top-menu-item"><a href="index.php?controller=pages&action=about">About</a></li>
+		<li class="top-menu-item"><a href="index.php?controller=gallery&action=show&page=1">Gallery</a></li>
 		<?php
 			if (!isset($_SESSION["logged_on_user"]) || $_SESSION["logged_on_user"] == "") {
 				$_SESSION["logged_on_user"] = "";
