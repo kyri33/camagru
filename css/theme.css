@@ -13,6 +13,25 @@ h1 {
     margin: 0 auto;
 }
 
+#comment-box {
+	width: 25%;
+	height: 30%;
+	background-color: white;
+}
+
+#user-name {
+	color: red;
+}
+
+#comment {
+	color: black;
+}
+
+#comment-list {
+	height: 100%;
+	width: 100%;
+}
+
 #top-nav {
 	position: fixed;
 	top: 0;

@@ -27,6 +27,17 @@
             $query->execute(array('user_id' => $userId, 'post_id' => $postId));
             return 1;
         }
+
+        public static function unlike($userId, $postId) {
+            $db = Db::getInstance();
+            $query = $db->prepare("DELETE FROM tbl_likes WHERE userId = :userId
+                AND postId = :postId;");
+            $query->execute(array('userId'=>$userId, 'postId'=>$postId));
+        }
+
+        public static function getComments($postId) {
+            
+        }
     }
 
  ?>
