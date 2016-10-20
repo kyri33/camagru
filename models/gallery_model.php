@@ -19,6 +19,14 @@
             $ret = $query->fetchAll();
             return $ret;
         }
+
+        public static function like($userId, $postId) {
+            $db = Db::getInstance();
+            $query = $db->prepare("INSERT INTO tbl_likes (userId, postId)
+                VALUES(:user_id, :post_id);");
+            $query->execute(array('user_id' => $userId, 'post_id' => $postId));
+            return 1;
+        }
     }
 
  ?>

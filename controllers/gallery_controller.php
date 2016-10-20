@@ -16,7 +16,13 @@
         }
 
         public function like() {
-
+            $response["Success"] = 0;
+            
+            if (isset($_SESSION['logged_on_user']) && $_SESSION['logged_on_user'] != "") {
+                if (Gallery::like($_SESSION['logged_on_user'], $_GET['id']) == 1)
+                    $response['Success'] = 1;
+            }
+            echo json_encode($response);
         }
 
     }

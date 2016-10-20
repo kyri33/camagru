@@ -1,8 +1,7 @@
 <?php
 
 	header("Content-Type: text/html");
-	session_start();
-
+	
 ?>
 
 <html>
