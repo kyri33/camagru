@@ -1,15 +1,13 @@
 <?php
 
 	header("Content-Type: text/html");
-	session_start();
-
+	
 ?>
 
 <html>
 <head>
 	<title><?php echo $page_title?></title>
 	<link type="text/css" rel="stylesheet" href="css/theme.css">
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"
 </head>
 <body>
 
@@ -18,6 +16,7 @@
 	<ul id="top-menu">
 		<li class="top-menu-item"><a href="index.php?controller=pages&action=home">Home</a></li>
 		<li class="top-menu-item"><a href="index.php?controller=pages&action=about">About</a></li>
+		<li class="top-menu-item"><a href="index.php?controller=gallery&action=show&page=1">Gallery</a></li>
 		<?php
 			if (!isset($_SESSION["logged_on_user"]) || $_SESSION["logged_on_user"] == "") {
 				$_SESSION["logged_on_user"] = "";
