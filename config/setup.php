@@ -30,6 +30,7 @@
             userId int NOT NULL,
             image varchar(64),
             post_date TIMESTAMP NOT NULL,
+            likes int NOT NULL DEFAULT '1',
             PRIMARY KEY (id)
             );";
 

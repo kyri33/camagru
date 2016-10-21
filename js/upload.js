@@ -46,14 +46,13 @@ window.addEventListener("load", function() {
 			var http = new XMLHttpRequest();
 			http.onreadystatechange = function () {
 				if (this.readyState == 4 && this.status == 200) {
-					var response = JSON.parse(this.responseText);
-					console.log(response.Success);
+					console.log(this.responseText);
 					alert("Image successfully uploaded");
 				}
 			};
 			var data = new FormData();
 			data.append('fileToUpload', image);
-			http.open("POST", "index.php?controller=upload&action=upload&type=json", true);
+			http.open("POST", "index.php?controller=upload&action=upload", true);
 			http.send(data);
 		}
 	});
