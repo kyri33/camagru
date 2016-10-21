@@ -23,6 +23,15 @@ h1 {
 	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
+input[type='radio'] {
+	display: none;
+}
+
+input[type="radio"]:checked + label {
+	border-color: #496990;
+	opacity: 0.5; 
+}
+
 #top-heading {
 
 	width: 100%;
@@ -35,7 +44,7 @@ h1 {
 
 input {
 	width : 100%;
-	height: 100%;
+	height: auto;
 	padding: 2%;
 
 }
@@ -140,22 +149,16 @@ option {
 #capture{
     font-size: 300%;
     color: #fff;
-    width: 50%;
+    width: 55%;
     height: auto;
     z-index: 999;
     position: relative;
 	float: right;
-    //right: 50%;
 	bottom: 50%;
-    //border-radius: 50%;
     padding-top: 1%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    //background: #496990;
-    //-moz-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.5);
-    //-webkit-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.5);
-    //box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.5);
 }
 
 .side {
@@ -177,7 +180,7 @@ option {
 }
 
 div.img {
-    margin-top: 10%;
+    margin-top: 8%;
     border: 1px solid #ccc;
     float: left;
     width: 180px;
@@ -195,4 +198,9 @@ div.img img {
 div.desc {
     padding: 15px;
     text-align: center;
+}
+
+#colourful {
+	display: block;
+	height: 21%;
 }
