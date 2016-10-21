@@ -28,27 +28,27 @@
   <div class="desc">Filter Name</div>
 </div>
 
-
 <div class="img">
-  <a target="_blank" href="">
-    <img src="face.png" alt="Mountains" width="300" height="200">
+  <input type="radio" name="filter" id="check2"/>
+    <label id='colourful' for="check2"><img src="face.png" alt="Forest" width="300" height="200"></label>
   </a>
   <div class="desc">Filter Name</div>
 </div>
 
 <div class="img">
-  <a target="_blank" href="">
-    <img src="face.png" alt="Mountains" width="300" height="200">
+  <input type="radio" name="filter" id="check2"/>
+    <label id='colourful' for="check2"><img src="face.png" alt="Forest" width="300" height="200"></label>
   </a>
   <div class="desc">Filter Name</div>
 </div>
 
 <div class="img">
-  <a target="_blank" href="">
-    <img src="face.png" alt="Mountains" width="300" height="200">
+  <input type="radio" name="filter" id="check2"/>
+    <label id='colourful' for="check2"><img src="face.png" alt="Forest" width="300" height="200"></label>
   </a>
   <div class="desc">Filter Name</div>
 </div>
+
 
  <div class="side">
 		<video id="camera" width="640" height="480"></video>
