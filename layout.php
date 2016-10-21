@@ -8,6 +8,8 @@
 <head>
 	<title><?php echo $page_title?></title>
 	<link type="text/css" rel="stylesheet" href="css/theme.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
 </head>
 <body>
 
