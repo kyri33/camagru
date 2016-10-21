@@ -13,32 +13,13 @@ h1 {
     margin: 0 auto;
 }
 
-#comment-box {
-	width: 25%;
-	height: 30%;
-	background-color: white;
-}
-
-#user-name {
-	color: red;
-}
-
-#comment {
-	color: black;
-}
-
-#comment-list {
-	height: 100%;
-	width: 100%;
-}
-
 #top-nav {
 	position: fixed;
 	top: 0;
 	right: 0;
 	background: black;
 	/*width: 100%;
-	height: 10%;*/
+	height: 8%;*/
 	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -52,26 +33,11 @@ h1 {
 	font-size: 4em;
 }
 
-/****** YOU CANT JUST MAKE INPUT 100% CAKE. NOW EVERY INPUT WE USE
-			MUST BE THIS SIZE????. FIX THIS SHIT.
-			vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 input {
 	width : 100%;
 	height: 100%;
 	padding: 2%;
 
-}      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
-
-input[type="checkbox"] {
-	display: none;
-}
-
-input[type="checkbox"] + label {
-	color: white;
-}
-
-input[type="checkbox"]:checked + label {
-	color: red;
 }
 
 #center-box {
@@ -106,7 +72,7 @@ input[type="checkbox"]:checked + label {
 
 #camera {
 	display: block;
-	padding-top: 5%;
+	padding-top: 10%;
 	padding-left: 5%;
 }
 
@@ -171,29 +137,25 @@ option {
 	display: none;
 }
 
-#capture {
-	outline: none;
-	margin-left: 2%;
-   background: #496990;
-   padding: 0.5% 17.5%;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   color: #ffffff;
-   font-size: 120%;
-   font-family: sans-serif;
-   text-decoration: none;
-   vertical-align: middle;
-	border: none;
-   }
-#capture:hover {
-   color: #496990;
-   background-color: #ffffff;
-   cursor: pointer;
-   }
-
-#capture:active {
-	color: #ffffff;
-	background-color: #33842a;
-	opacity: 0.5;
+#capture{
+    font-size: 300%;
+    color: #fff;
+    width: 50%;
+    height: auto;
+    z-index: 999;
+    position: relative;
+	float: right;
+    //right: 50%;
+	bottom: 50%;
+    //border-radius: 50%;
+    padding-top: 1%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    //background: #496990;
+    //-moz-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.5);
+    //-webkit-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.5);
+    //box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.5);
 }
 
 .side {
@@ -202,4 +164,35 @@ option {
 
 #canvas {
 	padding-left: 5%;
+	float: left;
+} 
+
+#fileToUpload {
+	height: 10%;
+}
+
+#buts {
+	float: left;
+	margin-left: 2%;
+}
+
+div.img {
+    margin-top: 10%;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto%;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
 }

@@ -15,7 +15,7 @@
 				$userId = $_SESSION["logged_on_user"];
 
 				if (Upload::add($image, $userId) == 1)
-					echo json_encode(array("Success" => '1'));
+					echo "Success";
 				else
 					echo "Failure";
 			}
