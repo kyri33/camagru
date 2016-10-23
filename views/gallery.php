@@ -38,5 +38,12 @@
    <?php }
  ?>
  </ul>
+<?php
+    $nextPage = $pageNum + 1;
+    $previousPage = $pageNum - 1;
+    if ($pageNum > 1) {
+        ?>
+        <a href="<?php echo 'index.php?controller=gallery&action=show&page='.$previousPage;?>">Previous</a>
+    <?php } ?>
 
- 
+<a href="<?php echo 'index.php?controller=gallery&action=show&page='.$nextPage;?>">Next</a>

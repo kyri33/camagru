@@ -11,7 +11,6 @@
         }
         
         public static function getPosts($pageNum) {
-            $pageNum -= 1;
             $begin = $pageNum * 5;
             $db = Db::getInstance();
             $query = $db->prepare("SELECT id, (SELECT username FROM tbl_users

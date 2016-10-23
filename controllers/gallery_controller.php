@@ -11,7 +11,7 @@
                 $totalPages = (int)($total / 5) + 1;
             if ($pageNum > $totalPages)
                 $pageNum = 1;
-            $posts = Gallery::getPosts($pageNum);
+            $posts = Gallery::getPosts($pageNum - 1);
             require_once('views/gallery.php');
         }
 
