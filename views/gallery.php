@@ -10,10 +10,15 @@
        <label id="<?php echo 'likes'.$post['id'];?>"><?php echo $post['likes'];?></label><label> Likes</label>
        <input type="checkbox" onchange="like(this)" id="<?php echo $post['id']; ?>">
        <label for="<?php echo $post['id']; ?>"><i class="fa fa-heart" aria-hidden="true"></i></label>
+       <div id="box">
        <div id="comment-box">
         <div id="comment-text">
-            <input type="text">
+            <div>       
+                 <input type="text">
+                 <button type="submit" id="commentButton">Comment</button>
             </div>
+        </div>
+        </div>
        
        <?php if (!empty($comments)) { ?>
             <ul id="comment-list">

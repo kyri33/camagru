@@ -39,11 +39,21 @@ input[type='radio'] {
 	display: none;
 }
 
+#box{
+	display: inline-block;
+	width: 25%;
+	height: 10%;
+}
 
 #comment-box {
-	width: 25%;
-	height: 30%;
+	position: relative;
+	width: 100%;
+	height: 100%;
 	background-color: white;
+	display: inline-block;
+	min-width: 25%;
+	margin-bottom: 50%;
+	margin-top: 10%;
 }
 
 #user-name {
@@ -54,10 +64,10 @@ input[type='radio'] {
 	color: black;
 }
 
-#comment-list {
+/*#comment-list {
 	height: 100%;
 	width: 100%;
-}
+}*/
 
 input[type="radio"]:checked + label {
 	border-color: white;
@@ -236,12 +246,6 @@ div.desc {
 	display: block;
 } 
 
-#comment-box {
-	display: inline-block;
-	
-	
-}
-
 #page-size {
 	margin-top: 8%;
 }
@@ -261,4 +265,42 @@ div.desc {
     position: relative;
     margin-top: -65%;
 	margin-left: 5%;
+}
+
+#commentButton {
+	width: 100%;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #63b8ee), color-stop(1, #468ccf));
+	background:-moz-linear-gradient(top, #63b8ee 5%, #468ccf 100%);
+	background:-webkit-linear-gradient(top, #63b8ee 5%, #468ccf 100%);
+	background:-o-linear-gradient(top, #63b8ee 5%, #468ccf 100%);
+	background:-ms-linear-gradient(top, #63b8ee 5%, #468ccf 100%);
+	background:linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#63b8ee', endColorstr='#468ccf',GradientType=0);
+	background-color:#63b8ee;
+	display:inline-block;
+	cursor:pointer;
+	color:#14396a;
+	font-family:Verdana;
+	font-size:15px;
+	padding:6px 24px;
+	text-decoration:none;
+}
+
+#commentButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #468ccf), color-stop(1, #63b8ee));
+	background:-moz-linear-gradient(top, #468ccf 5%, #63b8ee 100%);
+	background:-webkit-linear-gradient(top, #468ccf 5%, #63b8ee 100%);
+	background:-o-linear-gradient(top, #468ccf 5%, #63b8ee 100%);
+	background:-ms-linear-gradient(top, #468ccf 5%, #63b8ee 100%);
+	background:linear-gradient(to bottom, #468ccf 5%, #63b8ee 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#468ccf', endColorstr='#63b8ee',GradientType=0);
+	background-color:#468ccf;
+}
+#commentButton:active {
+	position:relative;
+	top:1px;
+}
+
+button:focus, input[type="button"]:focus {
+    outline: none;
 }
