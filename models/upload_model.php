@@ -12,6 +12,15 @@
 			$query_upload->execute(array('userId' => $userId, 'image' => $name));
 			return 1;
 		}
+
+		public static function getPosts($userId) {
+			$db = Db::getInstance();
+			$query = $db->prepare("SELECT image FROM tbl_posts WHERE userId = :userId ORDER BY id DESC;");
+			$query->execute(array('userId'=>$userId));
+
+			$ret = $query->fetchAll();
+			return $ret;
+		}
 	}
 
 ?>

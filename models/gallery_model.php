@@ -40,7 +40,22 @@
         }
 
         public static function getComments($postId) {
-            
+            $db = Db::getInstance();
+            $query = $db->prepare("SELECT tbl_users.username, comment FROM tbl_comments LEFT JOIN tbl_users
+                ON tbl_comments.userId = tbl_users.id WHERE postId = :postId ORDER BY tbl_comments.id DESC;");
+            $query->execute(array('postId'=>$postId));
+            $ret = $query->fetchAll();
+            return $ret;
+        }
+
+        public static function comment($userId, $comment, $postId) {
+
+            $db = Db::getInstance();
+            $query = $db->prepare("INSERT INTO tbl_comments (userId, postId, comment)
+                VALUES(:userId, :postId, :comment);");
+            $query->execute(array('userId'=>$userId, 'postId'=>$postId, 'comment'=>$comment));
+
+            return 1;
         }
     }
 

@@ -5,8 +5,10 @@
 		public function show() {
 			if (!isset($_SESSION["logged_on_user"]) || $_SESSION["logged_on_user"] == "")
 				header('Location: index.php?controller=pages&action=error');
-			else
+			else {
+				$posts = Upload::getPosts($_SESSION['logged_on_user']);
 				require_once('views/upload/upload.php');
+			}
 		}
 
 		public function upload() {
@@ -41,7 +43,7 @@
 					echo json_encode(array("Success" => '1'));
 				else
 					echo "Failure";
-				//unlink($tmpName.'.png');
+				unlink($tmpName.'.png');
 				exit(1);
 			}
 		}

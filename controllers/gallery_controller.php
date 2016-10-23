@@ -32,6 +32,18 @@
             echo json_encode($response);
         }
 
+        public function comment() {
+            $response['Success'] = 0;
+            $comment = $_POST['comment'];
+            $postId = $_GET['id'];
+            if (!isset($_SESSION['logged_on_user']) || $_SESSION['logged_on_user'] == "") {
+                die(json_encode($response));
+            }
+            if (Gallery::comment($_SESSION['logged_on_user'], $comment, $postId) == 1)
+                $response['Success'] = '1';
+            die(json_encode($response));
+        }
+
     }
 
  ?>

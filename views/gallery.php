@@ -14,19 +14,19 @@
        <div id="comment-box">
         <div id="comment-text">
             <div>       
-                 <input type="text">
-                 <button type="submit" id="commentButton">Comment</button>
+                 <input type="text" id="<?php echo 'commentText'.$post['id']; ?>">
+                 <button type="submit" class=".commentButton" id="<?php echo $post['id']; ?>" onclick="comment(this)">Comment</button>
             </div>
         </div>
         </div>
        
        <?php if (!empty($comments)) { ?>
-            <ul id="comment-list">
+            <ul id="<?php echo 'commentList'.$post['id']; ?>">
             <?php
                 foreach($comments as $comment) {
             ?>
                 <li>
-                    <p id="user-name"><?php echo $comment['userName']; ?> </p>
+                    <p id="user-name"><?php echo $comment['username']; ?> </p>
                     <p id="comment"><?php echo $comment['comment']; ?> </p>
                 </li>
             <?php } ?>
@@ -38,3 +38,5 @@
    <?php }
  ?>
  </ul>
+
+ 
