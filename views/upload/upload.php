@@ -10,42 +10,42 @@
 
 <div class="img">
  <input type="radio" name="filter" id="Fire"/>
-   <label id='colourful' for="Fire"><img src="glasses.png" alt="Forest" width="300" height="200"></label>
+   <label id='colourful' for="Fire"><img src="Fire.png" alt="Forest" width="300" height="200"></label>
  </a>
- <div class="desc">Filter Name</div>
+ <div class="desc">Fire</div>
 </div>
 
 <div class="img">
  <input type="radio" name="filter" id="Hat"/>
-   <label id='colourful' for="Hat"><img src="ben.png" alt="Forest" width="300" height="200"></label>
+   <label id='colourful' for="Hat"><img src="Hat.png" alt="Forest" width="300" height="200"></label>
  </a>
- <div class="desc">Filter Name</div>
+ <div class="desc">Hat</div>
 </div>
 
 <div class="img">
  <input type="radio" name="filter" id="Up"/>
-   <label id='colourful' for="Up"><img src="face.png" alt="Forest" width="300" height="200"></label>
+   <label id='colourful' for="Up"><img src="Up.png" alt="Forest" width="300" height="200"></label>
  </a>
- <div class="desc">Filter Name</div>
+ <div class="desc">Up</div>
 </div>
 
 <div class="img">
  <input type="radio" name="filter" id="Cig"/>
-   <label id='colourful' for="Cig"><img src="face.png" alt="Forest" width="300" height="200"></label>
+   <label id='colourful' for="Cig"><img src="Cig.png" alt="Forest" width="300" height="200"></label>
  </a>
- <div class="desc">Filter Name</div>
+ <div class="desc">Cigarrette</div>
 </div>
 
 <div class="img">
  <input type="radio" name="filter" id="Face"/>
-   <label id='colourful' for="Face"><img src="face.png" alt="Forest" width="300" height="200"></label>
+   <label id='colourful' for="Face"><img src="Face.png" alt="Forest" width="300" height="200"></label>
  </a>
- <div class="desc">Filter Name</div>
+ <div class="desc">Face</div>
 </div>
 
 <div class="img">
  <input type="radio" name="filter" id="Glasses"/>
-   <label id='colourful' for="Glasses"><img src="face.png" alt="Forest" width="300" height="200"></label>
+   <label id='colourful' for="Glasses"><img src="Glasses.png" alt="Forest" width="300" height="200"></label>
  </a>
  <div class="desc">Filter Name</div>
 </div>
@@ -54,9 +54,9 @@
 
 <div class="img">
  <input type="radio" name="filter" id="LightningStrike"/>
-   <label id='colourful' for="LightningStrike"><img src="face.png" alt="Forest" width="300" height="200"></label>
+   <label id='colourful' for="LightningStrike"><img src="LightningStrike.png" alt="Forest" width="300" height="200"></label>
  </a>
- <div class="desc">Filter Name</div>
+ <div class="desc">Lightning Strike</div>
 </div>
 
 <div class="side">

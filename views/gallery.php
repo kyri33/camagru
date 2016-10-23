@@ -12,14 +12,6 @@
        <label for="<?php echo $post['id']; ?>"><i class="fa fa-heart" aria-hidden="true"></i></label>
        <div id="box">
        <div id="comment-box">
-        <div id="comment-text">
-            <div>       
-                 <input type="text" id="<?php echo 'commentText'.$post['id']; ?>">
-                 <button type="submit" class=".commentButton" id="<?php echo $post['id']; ?>" onclick="comment(this)">Comment</button>
-            </div>
-        </div>
-        </div>
-       
        <?php if (!empty($comments)) { ?>
             <ul id="<?php echo 'commentList'.$post['id']; ?>">
             <?php
@@ -32,6 +24,13 @@
             <?php } ?>
             </ul>
             <?php } ?>
+        <div id="comment-text">
+            <div>       
+                 <input type="text" id="<?php echo 'commentText'.$post['id']; ?>">
+                 <button type="submit" class=".commentButton" id="<?php echo $post['id']; ?>" onclick="comment(this)">Comment</button>
+            </div>
+        </div>
+        </div>
             </div>
         </div> 
        </li>

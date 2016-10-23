@@ -45,7 +45,7 @@
             $email = Gallery::getEmail($postId);
             $from = "From: noreply@camagru.co.za"."\r\n";
             $subject = "One of your photos recieved a comment";
-            $url = "http://localhost:8080/camagru/index.php?controller=validation&action=login";
+            $url = "http://localhost:8080/camagru/index.php?controller=gallery&action=show&page=1";
             $message = "Someone commented on your photo, Log in to view the comment ".$url;
             mail($email, $subject, $message, $from);
             echo(json_encode($response));
