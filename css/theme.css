@@ -39,6 +39,7 @@ input[type='radio'] {
 	display: none;
 }
 
+
 #comment-box {
 	width: 25%;
 	height: 30%;
@@ -59,7 +60,7 @@ input[type='radio'] {
 }
 
 input[type="radio"]:checked + label {
-	border-color: #496990;
+	border-color: white;
 	opacity: 0.5; 
 }
 
@@ -233,5 +234,31 @@ div.desc {
 
 #colourful {
 	display: block;
-	height: 21%;
+} 
+
+#comment-box {
+	display: inline-block;
+	
+	
+}
+
+#page-size {
+	margin-top: 8%;
+}
+
+#comment-click {
+    position: relative;
+	top: 100%;
+}
+
+#comment-text {
+	height: 10%;
+	margin-top: 90%;
+}
+
+#super-image {
+    overflow: hidden;
+    position: relative;
+    margin-top: -65%;
+	margin-left: 5%;
 }

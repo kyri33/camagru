@@ -36,6 +36,7 @@
             $query = $db->prepare("DELETE FROM tbl_likes WHERE userId = :userId
                 AND postId = :postId;");
             $query->execute(array('userId'=>$userId, 'postId'=>$postId));
+            return 1;
         }
 
         public static function getComments($postId) {

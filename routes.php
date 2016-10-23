@@ -32,7 +32,7 @@
 						'signup' => ['show'],
 						'validation' => ['login', 'logout'],
 						'upload' => ['show', 'upload'],
-						'gallery' => ['show', 'like']);
+						'gallery' => ['show', 'like', 'unlike']);
 
 	if (array_key_exists($controller, $controllers))
 	{

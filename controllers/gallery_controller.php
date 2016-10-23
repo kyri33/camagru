@@ -26,9 +26,9 @@
         }
 
         public function unlike() {
-            $response['Success'] = 0;
+            $response['Success'] = '0';
             if (Gallery::unlike($_SESSION['logged_on_user'], $_GET['id']) == 1)
-                $response['Success'] = 1;
+                $response['Success'] = '1';
             echo json_encode($response);
         }
 
