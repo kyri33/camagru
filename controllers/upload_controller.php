@@ -28,7 +28,7 @@
 
 				$main = imagecreatefrompng($tmpName.'.png');
 				imagecopy($finalImage, $main, 0, 0, 0, 0, 640, 480);
-				imagecopy($finalImage, $selected, 0, 0, 0, 0, 320, 240);
+				imagecopy($finalImage, $selected, 0, 0, 0, 0, 640, 480);
 
 				ob_start();
 					imagepng($finalImage);
