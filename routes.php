@@ -23,16 +23,21 @@
 			require_once('models/gallery_model.php');
 			$controller = new GalleryController();
 			break;
+		case 'reset':
+			require_once('models/reset_model.php');
+			$controller = new ResetController();
+			break;
 		}
 
 		$controller->{ $action }();
 	}
 
 	$controllers = array('pages' => ['home', 'error', 'about'],
-						'signup' => ['show'],
+						'signup' => ['show', 'verify'],
 						'validation' => ['login', 'logout'],
 						'upload' => ['show', 'upload'],
-						'gallery' => ['show', 'like', 'unlike', 'comment']);
+						'gallery' => ['show', 'like', 'unlike', 'comment'],
+						'reset' => ['npass', 'fpass', 'verify']);
 
 	if (array_key_exists($controller, $controllers))
 	{

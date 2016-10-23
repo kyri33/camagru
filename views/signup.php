@@ -18,6 +18,8 @@
             $errorMessage = "Passwords do not match";
         else if ($error == "match")
             $errorMessage = "Username already exists";
+        else if ($error = "verify")
+            $errorMessage = "A verification email has been sent to ".$email." please check your email to verify your account";
      ?>
 
      <p> <?php echo $errorMessage ?> </p>

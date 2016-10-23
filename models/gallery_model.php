@@ -56,6 +56,15 @@
 
             return 1;
         }
+
+        public static function getEmail($postId) {
+            $db = Db::getInstance();
+            $query = $db->prepare("SELECT tbl_users.email AS email FROM tbl_posts LEFT JOIN tbl_users ON tbl_posts.userId = tbl_users.id
+                WHERE tbl_posts.id = :postId LIMIT 1;");
+            $query->execute(array('postId'=>$postId));
+            $ret = $query->fetch();
+            return $ret['email'];
+        }
     }
 
  ?>

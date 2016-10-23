@@ -5,7 +5,7 @@
 	<?php
 		$errorMessage = "";
 		if ($error == "incorrect")
-			$errorMessage = "Incorrect login/password";
+			$errorMessage = "There was an error loggin in. Please make sure your credentials are correct and your account is verified";
 	?>
 
 	<p> <?php echo $errorMessage ?> </p>
@@ -17,4 +17,5 @@
 	<li><input id="submit" type="submit" value="Log In" name="submit" /></li>
 	</ul>
 </form>
+<a href="index.php?controller=reset&action=fpass">Forgot Password</a>
 </div>

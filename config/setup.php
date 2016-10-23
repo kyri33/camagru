@@ -18,6 +18,8 @@
         email varchar(128) NOT NULL,
         password varchar(512) NOT NULL,
         username varchar(128) NOT NULL,
+        protect varchar(128) NOT NULL,
+        reset varchar(128) DEFAULT '1',
         PRIMARY KEY (id)
         );";
 

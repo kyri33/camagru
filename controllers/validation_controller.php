@@ -11,7 +11,7 @@
 				$id = Validation::check($login, $hash);
 				if ($id != 0) {
 					$_SESSION["logged_on_user"] = $id;
-					header('Location: index.php');
+					header('Location: index.php?controller=upload&action=show');
 				}
 				$error = "incorrect";
 			}

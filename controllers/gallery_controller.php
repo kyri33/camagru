@@ -41,7 +41,14 @@
             }
             if (Gallery::comment($_SESSION['logged_on_user'], $comment, $postId) == 1)
                 $response['Success'] = '1';
-            die(json_encode($response));
+            
+            $email = Gallery::getEmail($postId);
+            $from = "From: noreply@camagru.co.za"."\r\n";
+            $subject = "One of your photos recieved a comment";
+            $url = "http://localhost:8080/camagru/index.php?controller=validation&action=login";
+            $message = "Someone commented on your photo, Log in to view the comment ".$url;
+            mail($email, $subject, $message, $from);
+            echo(json_encode($response));
         }
 
     }

@@ -7,7 +7,7 @@
         {
 			$db = Db::getInstance();
             $query = $db->prepare('SELECT id FROM tbl_users WHERE
-				(username = :login OR email = :login) AND password = :hash;');
+				(username = :login OR email = :login) AND password = :hash AND protect = "1";');
 			$query->execute(array('login' => $login, 'hash' => $hash));
 			$ret = $query->fetch();
 			if (empty($ret)) {

@@ -25,6 +25,8 @@
                     $error = "repeat";
                 else if ($this->_check($username, $password, $email) == False)
                     $error = "match";
+                else
+                    $error = "verify";
             }
 
             require_once('views/signup.php');
@@ -36,6 +38,22 @@
             else
                 return False;
         }
+
+        public function verify()
+	    {
+		    $protect = $_GET['protect'];
+		
+		    if (SignUp::verify($protect) == 1)
+		    {
+			    echo "Your account has been successfully verified, please sign in.";
+			    header("refresh:2; url='index.php?controller=validation&action=login'");
+		    }
+		    else
+		    {
+			    echo "There was a problem verifying your account, please sign up again.";
+			    header("refresh:2; url=index.php?controller=signup&action=show");
+		    }
+	    }
 
     }
 
