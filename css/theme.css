@@ -304,3 +304,45 @@ div.desc {
 button:focus, input[type="button"]:focus {
     outline: none;
 }
+
+hr {
+	margin-top: 45%;
+}
+
+.previous {
+	background-color:black;
+	color:white;
+	padding:20px;
+	width: 90%;
+	height: 20%;
+}
+
+input#homeSignUp{
+	cursor:pointer;
+	padding:5px 25px;
+	background:#33842a;
+	border:1px solid #111;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+	-moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+	box-shadow: 0 0 4px rgba(0,0,0, .75);
+	color:#111;
+	font-size:1.1em;
+	font-family: Helvetica;
+	width: 20%;
+	margin-left: 45.5%;
+	position: relative;
+	margin-top: 20%;
+}
+input#homeSignUp:hover, input#homeSignUp:focus {
+	background-color :#399630; 
+	-webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+	-moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
+	box-shadow: 0 0 1px rgba(0,0,0, .75);
+}
+
+.justsomebox {
+	width: 90%;
+}

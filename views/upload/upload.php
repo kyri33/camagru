@@ -9,43 +9,43 @@
 </div>
 
 <div class="img">
- <input type="radio" name="filter" id="glasses"/>
-   <label id='colourful' for="glasses"><img src="glasses.png" alt="Forest" width="300" height="200"></label>
+ <input type="radio" name="filter" id="Fire"/>
+   <label id='colourful' for="Fire"><img src="glasses.png" alt="Forest" width="300" height="200"></label>
  </a>
  <div class="desc">Filter Name</div>
 </div>
 
 <div class="img">
- <input type="radio" name="filter" id="ben"/>
-   <label id='colourful' for="ben"><img src="ben.png" alt="Forest" width="300" height="200"></label>
+ <input type="radio" name="filter" id="Hat"/>
+   <label id='colourful' for="Hat"><img src="ben.png" alt="Forest" width="300" height="200"></label>
  </a>
  <div class="desc">Filter Name</div>
 </div>
 
 <div class="img">
- <input type="radio" name="filter" id="face"/>
-   <label id='colourful' for="face"><img src="face.png" alt="Forest" width="300" height="200"></label>
+ <input type="radio" name="filter" id="Up"/>
+   <label id='colourful' for="Up"><img src="face.png" alt="Forest" width="300" height="200"></label>
  </a>
  <div class="desc">Filter Name</div>
 </div>
 
 <div class="img">
- <input type="radio" name="filter" id="face"/>
-   <label id='colourful' for="face"><img src="face.png" alt="Forest" width="300" height="200"></label>
+ <input type="radio" name="filter" id="Cig"/>
+   <label id='colourful' for="Cig"><img src="face.png" alt="Forest" width="300" height="200"></label>
  </a>
  <div class="desc">Filter Name</div>
 </div>
 
 <div class="img">
- <input type="radio" name="filter" id="face"/>
-   <label id='colourful' for="face"><img src="face.png" alt="Forest" width="300" height="200"></label>
+ <input type="radio" name="filter" id="Face"/>
+   <label id='colourful' for="Face"><img src="face.png" alt="Forest" width="300" height="200"></label>
  </a>
  <div class="desc">Filter Name</div>
 </div>
 
 <div class="img">
- <input type="radio" name="filter" id="face"/>
-   <label id='colourful' for="face"><img src="face.png" alt="Forest" width="300" height="200"></label>
+ <input type="radio" name="filter" id="Glasses"/>
+   <label id='colourful' for="Glasses"><img src="face.png" alt="Forest" width="300" height="200"></label>
  </a>
  <div class="desc">Filter Name</div>
 </div>
@@ -53,8 +53,8 @@
 </br>
 
 <div class="img">
- <input type="radio" name="filter" id="face"/>
-   <label id='colourful' for="face"><img src="face.png" alt="Forest" width="300" height="200"></label>
+ <input type="radio" name="filter" id="LightningStrike"/>
+   <label id='colourful' for="LightningStrike"><img src="face.png" alt="Forest" width="300" height="200"></label>
  </a>
  <div class="desc">Filter Name</div>
 </div>
@@ -76,7 +76,6 @@
         <input type="file" name="fileToUpload" id="fileToUpload">
        <input type="text" name="selectedImage" id="selectedImage">
         <div id="buts">
-            <button id="preview">Preview</button>
            <button id="submit">Submit</button>
         </div>
     </div>
