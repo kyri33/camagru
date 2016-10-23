@@ -1,16 +1,20 @@
 <?php
 
     require_once('database.php');
+    error_reporting(E_ALL);
+	ini_set('display_errors', 1);
 
-    $conn = mysqli_connect($DB_HOST, $DB_USER, $DB_PASSWORD);
-    if (!$conn)
-        die("Connection failed ".mysqli_connect_error());
+try {
+	$conn = new PDO($DB_DSN, $DB_USER, $DB_PASSWORD);
+	echo "Connected successfully ";
+} catch (PDOException $e) {
+	die("Connection failed: ".$e->getMessage());
+}
 
     $sql_db_create = "CREATE DATABASE IF NOT EXISTS ".$DB_NAME;
-    if (!mysqli_query($conn, $sql_db_create))
-        die("Error creating database ".mysqli_error($conn));
+    $conn->query($sql_db_create);
 
-    mysqli_select_db($conn, $DB_NAME);
+    $conn->query("USE $DB_NAME");
 
     $sql_table_create =
         "CREATE TABLE IF NOT EXISTS tbl_users
@@ -23,8 +27,7 @@
         PRIMARY KEY (id)
         );";
 
-    if (!mysqli_query($conn, $sql_table_create))
-        die("Error creating tbl_users ".mysqli_error($conn));
+    $conn->query($sql_table_create);
 
     $sql_table_create =
             "CREATE TABLE IF NOT EXISTS tbl_posts
@@ -35,8 +38,7 @@
             PRIMARY KEY (id)
             );";
 
-    if (!mysqli_query($conn, $sql_table_create))
-		die("Error creating tbl_posts ".mysqli_error($conn));
+    $conn->query($sql_table_create);
 
 	$sql_table_create =
 		"CREATE TABLE IF NOT EXISTS tbl_comments
@@ -46,8 +48,7 @@
 		comment TEXT NOT NULL,
 		PRIMARY KEY (id)
 		);";
-	if (!mysqli_query($conn, $sql_table_create))
-		die ("Error creating tbl_comments ".mysqli_error($conn));
+	$conn->query($sql_table_create);
 
     $sql_table_create =
         "CREATE TABLE IF NOT EXISTS tbl_likes
@@ -56,8 +57,7 @@
         postId int NOT NULL,
         PRIMARY KEY (id)
         );";
-    if (!mysqli_query($conn, $sql_table_create))
-        die ("Error creating tbl_likes ".mysqli_error($conn));
+    $conn->query($sql_table_create);
 
     if (!file_exists("../images/")) {
         mkdir("../images");
